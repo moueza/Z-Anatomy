@@ -1,0 +1,21 @@
+ git push --set-upstream origin PC-Version
+Uploading LFS objects: 100% (2/2), 6.7 MB | 3.0 MB/s, done.                     
+Enumerating objects: 20392, done.
+Counting objects: 100% (20392/20392), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (19720/19720), done.
+Writing objects: 100% (20391/20391), 425.82 MiB | 2.38 MiB/s, done.
+Total 20391 (delta 9279), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (9279/9279), done.
+remote: warning: See https://gh.io/lfs for more information.
+remote: warning: File Resources/Models/FBX/CardioVascular41.fbx is 61.88 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: File Resources/Models/FBX/NervousSystem100.fbx is 51.39 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: File Z-Anatomy PC/Assets/Plugins/iOS/Firebase/libFirebaseCppFirestore.a is 60.86 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+remote: 
+remote: Create a pull request for 'PC-Version' on GitHub by visiting:
+remote:      https://github.com/moueza/Z-Anatomy/pull/new/PC-Version
+remote: 
+To github.com:moueza/Z-Anatomy.git
+ * [new branch]      PC-Version -> PC-Version
+branch 'PC-Version' set up to track 'origin/PC-Version'.
