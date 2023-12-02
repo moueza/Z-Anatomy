@@ -25,4 +25,4 @@ Rivival from :
 
 It is not a fork because, tried but, incompatible with lfs to provide big lfs .blend files see #5
 
-Contributors, please, conform to https://www.conventionalcommits.org/en/v1.0.0/ for better automatisation
+Contributors, please, conform to https://www.conventionalcommits.org/en/v1.0.0/ for better automatization
