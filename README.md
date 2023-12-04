@@ -18,11 +18,10 @@ You can find more information about the license in the LICENSE file.
 [![Z-Anatomy video](https://img.youtube.com/vi/h6NNGB-_cSY/0.jpg)](https://www.youtube.com/watch?v=h6NNGB-_cSY)
 
 # Z-Anatomy
-Rivival from :
-               - https://github.com/LluisV/Z-Anatomy/ just as a storage to keep files still available
+- Just Rivival storage to keep files still available from https://github.com/LluisV/Z-Anatomy/ 
 
-               - https://www.linkedin.com/feed/update/urn:li:activity:7078354492957548544/ -> RDV in August 2024
+- https://www.linkedin.com/feed/update/urn:li:activity:7078354492957548544/ -> RDV in August 2024
 
-It is not a fork because, tried but, incompatible with lfs to provide big lfs .blend files see #5
+- It is not a fork because, tried but, incompatible with lfs to provide big lfs .blend files see #5
 
-Contributors, please, conform to https://www.conventionalcommits.org/en/v1.0.0/ for better automatization
+- Contributors, please, conform to https://www.conventionalcommits.org/en/v1.0.0/ for better automatization
