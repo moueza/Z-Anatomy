@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Z-Anatomy';
-  version = 19;//v = 
+  version = 20;//v = 
 }
