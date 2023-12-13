@@ -22,6 +22,7 @@ You can find more information about the license in the LICENSE file.
 
 - https://www.linkedin.com/feed/update/urn:li:activity:7078354492957548544/ -> RDV in August 2024
 
-- It is not a fork because, tried but, incompatible with lfs to provide big lfs .blend files see #5
+#https://stackoverflow.com/questions/16539687/github-readme-reference-issue
+- It is not a fork because, tried but, incompatible with lfs to provide big lfs .blend files see [#5](/../../issues/5)
 
 - Contributors, please, conform to https://www.conventionalcommits.org/en/v1.0.0/ for better automatization
