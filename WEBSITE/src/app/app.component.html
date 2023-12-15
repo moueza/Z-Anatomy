@@ -9,24 +9,25 @@
 </div>
 
 <!-- angular ng build file  not found
-  https://stackoverflow.com/questions/49148872/angular-build-index-html-not-working-->
+     https://stackoverflow.com/questions/49148872/angular-build-index-html-not-working-->
 <!--base href="./Z-Anatomy/docs/"-->
 <div class="content" role="main">
 
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
 
- 
+    
     <span>{{ title }}</span>
 
-  
+    
 
   </div>
 
 
   <!--popup https://www.w3schools.com/howto/howto_js_popup.asp-->
-  <div class="popup" onclick="myFunction()">Click me!
-  <span class="popuptext" id="myPopup">Popup text...</span>
+  <!--function https://angular.io/guide/event-binding -->
+  <div class="popup" (click)="myFunction()">Click me!
+    <span class="popuptext" id="myPopup">Popup text...</span>
   </div>
 
 
@@ -38,25 +39,25 @@
 
   <!-- assets https://stackoverflow.com/questions/56062183/angular-7-images-in-assets-folder-does-not-appear  assets/Startup.blend -->
   <div class="card-container">
- 
-
-     <a class="card" href="https://github.com/moueza/Z-Anatomy/blob/main/docs/assets/Startup.blend"  >
     
+
+    <a class="card" href="https://github.com/moueza/Z-Anatomy/blob/main/docs/assets/Startup.blend"  >
+      
       <span>Indirect Download Startup.blend 2</span>
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
     </a>
 
   </div>
 
- 
+  
 
   <!--div class="card-container">
-    
+      
 
-    <button class="card card-small" (click)="selection.value = 'build'" tabindex="0">
-    
-      <span>Build for Production</span>
-    </button>
+      <button class="card card-small" (click)="selection.value = 'build'" tabindex="0">
+	
+	<span>Build for Production</span>
+      </button>
   </div-->
 
   

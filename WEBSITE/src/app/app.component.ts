@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     title = 'Z-Anatomy';
-    version = 26;//v =
+    version = 27;//v =
     /***********************************************/
     //POPUP
     // When the user clicks on <div>, open the popup
     //javascript  is possibly 'null'.  https://timmousk.com/blog/typescript-object-is-possibly-null/
     //typescript document type https://stackoverflow.com/questions/58798640/what-is-documenttype-in-typescript
-   function myFunction() {
+    myFunction() {
 	var popup: HTMLElement  | undefined | null;
 	popup = document?.getElementById("myPopup");
 	popup?.classList.toggle("show");
