@@ -7,7 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     title = 'Z-Anatomy';
-    version = 29;//v =
+    version = 38;//v =
+    cookiesON=false;
+    /**  private https://stackoverflow.com/questions/40371728/firing-an-angular-2-attribute-directive-after-model-load */
+    constructor() {
+	this.cookiesON=false;
+    }
+
+    
+    ngOnInit() {
+        
+	this.myFunction();
+    }
     /***********************************************/
     //POPUP
     // When the user clicks on <div>, open the popup
@@ -19,4 +30,9 @@ export class AppComponent {
 	popup?.classList.toggle("show");
     }
     /***********************************************/
+
+    clickOnOK(){
+	this.cookiesON=true;
+	console.log("OK");
+    } 
 }
