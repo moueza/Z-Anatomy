@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
     title = 'Z-Anatomy';
     version = 29;//v =
     /***********************************************/
@@ -19,4 +20,5 @@ export class AppComponent {
 	popup?.classList.toggle("show");
     }
     /***********************************************/
+ 
 }
