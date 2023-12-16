@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     title = 'Z-Anatomy';
-    version = 38;//v =
-    cookiesON=false;
+    version = 46;//v =
+    cookiesONvar: boolean=false;
     /**  private https://stackoverflow.com/questions/40371728/firing-an-angular-2-attribute-directive-after-model-load */
     constructor() {
-	this.cookiesON=false;
+	this.cookiesONvar=false;
     }
 
     
@@ -32,7 +32,7 @@ export class AppComponent {
     /***********************************************/
 
     clickOnOK(){
-	this.cookiesON=true;
+	this.cookiesONvar=true;
 	console.log("OK");
     } 
 }
