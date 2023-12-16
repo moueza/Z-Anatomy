@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     title = 'Z-Anatomy';
-    version = 28;//v =
+    version = 29;//v =
     /***********************************************/
     //POPUP
     // When the user clicks on <div>, open the popup
