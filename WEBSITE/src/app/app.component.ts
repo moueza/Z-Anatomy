@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
     title = 'Z-Anatomy';
     version = 46;//v =
     cookiesONvar: boolean=false;
@@ -30,9 +31,10 @@ export class AppComponent {
 	popup?.classList.toggle("show");
     }
     /***********************************************/
-
+ 
     clickOnOK(){
 	this.cookiesONvar=true;
 	console.log("OK");
     } 
+ 
 }
