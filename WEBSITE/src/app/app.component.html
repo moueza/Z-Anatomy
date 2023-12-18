@@ -11,8 +11,8 @@
 
 
 
-<!--V17 Single class binding https://angular.dev/guide/templates/class-binding-->
-<div class="content" [class.cookiesONclass]="!cookiesONvar"  role="main">
+<!--V17 Single class binding -> Multi-class binding https://angular.dev/guide/templates/class-binding-->
+<div class="content" [class]="{cookiesOFFclass  : !cookiesONvar, displayNone  : cookiesONvar}"  role="main">
 
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
@@ -22,7 +22,7 @@
   </div>
 
   <div class="popup"  >
-    <span class="popuptext" id="myPopup">Popup text...<button (click)="  clickOnOK()">OK</button></span>
+    <span class="popuptext" id="myPopup">Do you accept cookies, otherwise quit<button (click)="  clickOnOK()">OK</button></span>
   </div>
 
 </div>
@@ -33,9 +33,10 @@
 
   https://stackoverflow.com/questions/49148872/angular-build-index-html-not-working-->
 
-<!--base href="./Z-Anatomy/docs/"-->
+<!--base href="./Z-Anatomy/docs/"
+  cf show vs visible-->
 
-<div class="content"   [class.cookiesONclass]="cookiesONvar"  role="main">
+<div class="content"   [class]="{cookiesONclass: cookiesONvar, displayNone: !cookiesONvar}"  role="main">
 
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
