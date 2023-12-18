@@ -8,33 +8,64 @@
   
 </div>
 
+
+
+
+<!--V17 Single class binding -> Multi-class binding https://angular.dev/guide/templates/class-binding-->
+<div class="content" [class]="{cookiesOFFclass  : !cookiesONvar, displayNone  : cookiesONvar}"  role="main">
+
+  <!-- Highlight Card -->
+  <div class="card highlight-card card-small">
+    
+    <span>{{ title }}</span>
+
+  </div>
+
+  <div class="popup"  >
+    <span class="popuptext" id="myPopup">Do you accept cookies, otherwise quit<button (click)="  clickOnOK()">OK</button></span>
+  </div>
+
+</div>
+
+
+
 <!-- angular ng build file  not found
 
   https://stackoverflow.com/questions/49148872/angular-build-index-html-not-working-->
 
-<!--base href="./Z-Anatomy/docs/"-->
-<div class="content" role="main">
+<!--base href="./Z-Anatomy/docs/"
+  cf show vs visible-->
+
+<div class="content"   [class]="{cookiesONclass: cookiesONvar, displayNone: !cookiesONvar}"  role="main">
 
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
-
     
     <span>{{ title }}</span>
-
-    
 
   </div>
 
 
+  
+
+
+  <!--popup https://www.w3schools.com/howto/howto_js_popup.asp-->
+  <!--function https://angular.io/guide/event-binding -->
+  
+
+
+
 
   
+  
   <!-- Resources -->
-  <h2>Resources</h2>
+  <h2   >Resources</h2>
   <!--p>Here are some links to help you get started:</p-->
 
   <!-- assets https://stackoverflow.com/questions/56062183/angular-7-images-in-assets-folder-does-not-appear  assets/Startup.blend -->
-  <div class="card-container">
 
+  <div class="card-container"  >
+     
  
 
      <a class="card" href="https://github.com/moueza/Z-Anatomy/blob/main/docs/assets/Startup.blend"  >
