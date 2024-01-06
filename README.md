@@ -18,7 +18,7 @@ You can find more information about the license in the LICENSE file.
 [![Z-Anatomy video](https://img.youtube.com/vi/h6NNGB-_cSY/0.jpg)](https://www.youtube.com/watch?v=h6NNGB-_cSY)
 
 # Z-Anatomy
-- Just Rivival storage to keep files still available from https://github.com/LluisV/Z-Anatomy/ 
+- Just Revival storage to keep files still available from https://github.com/LluisV/Z-Anatomy/ 
 
 - https://www.linkedin.com/feed/update/urn:li:activity:7078354492957548544/ -> RDV in August 2024
 
