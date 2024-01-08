@@ -1,0 +1,26 @@
+name: learn-github-actions
+run-name: ${{ github.actor }} GitHub Actions Pages Moi
+#on: [push]
+
+on:
+  pull_request:
+    # Sequence of patterns matched against refs/heads
+    branches:    
+      - main
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: npm install -g bats
+      - run: bats -v
+      - run: ls
+      #rm /var/www/html/Z-Anatomy/docs/ -Rf ;cd /var/www/html/Z-Anatomy/WEBSITE/ ;ng build --output-path /var/www/html/Z-Anatomy/docs/ --base-href Z-Anatomy --verbose ; cd /var/www/html/Z-Anatomy/
+      - run: rm docs/ -Rf
+      - run: cd WEBSITE/ 
+      - run: ng build --output-path ../docs/ --base-href Z-Anatomy --verbose
+      - run: ls ../docs
+      
