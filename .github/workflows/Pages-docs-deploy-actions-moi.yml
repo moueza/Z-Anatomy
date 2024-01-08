@@ -8,7 +8,7 @@ on:
     branches:    
       - main
 jobs:
-  check-bats-version:
+  Action-Pages-Me-job:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,5 +22,5 @@ jobs:
       - run: rm docs/ -Rf
       - run: npm install -g @angular/cli@15.2.10 #https://stackoverflow.com/questions/46623571/angular-ng-command-not-found
       - run: cd WEBSITE/; ls; ng build --output-path ../docs/ --base-href Z-Anatomy --verbose
-      - run: ls ../docs
+      - run: ls docs
       
