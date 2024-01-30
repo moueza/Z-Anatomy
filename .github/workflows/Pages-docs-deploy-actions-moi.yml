@@ -1,5 +1,6 @@
 name: Pages Me
 run-name: ${{ github.actor }} GitHub Actions Pages Me
+
 #on: [push]
 
 on:
@@ -8,7 +9,9 @@ on:
     branches:    
       - main
 jobs:
+
   Action-Pages-Me-job:
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,7 +23,8 @@ jobs:
       - run: ls
       #rm /var/www/html/Z-Anatomy/docs/ -Rf ;cd /var/www/html/Z-Anatomy/WEBSITE/ ;ng build --output-path /var/www/html/Z-Anatomy/docs/ --base-href Z-Anatomy --verbose ; cd /var/www/html/Z-Anatomy/
       - run: rm docs/ -Rf
+
       - run: npm install -g @angular/cli@15.2.10 #https://stackoverflow.com/questions/46623571/angular-ng-command-not-found
       - run: cd WEBSITE/; ls; ng build --output-path ../docs/ --base-href Z-Anatomy --verbose
       - run: ls docs
-      
+
