@@ -25,6 +25,7 @@ jobs:
       - run: rm docs/ -Rf
 
       - run: npm install -g @angular/cli@15.2.10 #https://stackoverflow.com/questions/46623571/angular-ng-command-not-found
-      - run: cd WEBSITE/; ls; ng build --output-path ../docs/ --base-href Z-Anatomy --verbose
+      #- run: cd WEBSITE/; ls; ng build --output-path ../docs/ --base-href Z-Anatomy --verbose
+      - run: cd WEBSITE/; ls; ng build ; cp disp -Rf ../docs
       - run: ls docs
 
