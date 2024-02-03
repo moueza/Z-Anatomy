@@ -22,7 +22,7 @@ jobs:
       - run: bats -v
       - run: ls
       #rm /var/www/html/Z-Anatomy/docs/ -Rf ;cd /var/www/html/Z-Anatomy/WEBSITE/ ;ng build --output-path /var/www/html/Z-Anatomy/docs/ --base-href Z-Anatomy --verbose ; cd /var/www/html/Z-Anatomy/
-      - run: rm docs/ -Rf
+      - run: rm dist/ -Rf ; rm docs/ -Rf ;
 
       #from https://blog.khophi.co/deploy-angular-with-github-actions/
       - run: cd WEBSITE ; npm install
