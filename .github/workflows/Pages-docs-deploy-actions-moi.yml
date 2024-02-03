@@ -24,7 +24,7 @@ jobs:
       #rm /var/www/html/Z-Anatomy/docs/ -Rf ;cd /var/www/html/Z-Anatomy/WEBSITE/ ;ng build --output-path /var/www/html/Z-Anatomy/docs/ --base-href Z-Anatomy --verbose ; cd /var/www/html/Z-Anatomy/
       - run: rm docs/ -Rf
 
-      - run: npm install -g @angular/cli@15.2.10 ; npm install  @angular/cli@15.2.10; cd WEBSITE/; ls; ng build ; cp dist -Rf ../docs #https://stackoverflow.com/questions/46623571/angular-ng-command-not-found
+      - run: cd WEBSITE/;npm install ; npm install  @angular/cli@15.2.10; ls; ng build ; cp dist -Rf ../docs #https://stackoverflow.com/questions/46623571/angular-ng-command-not-found
       #- run: cd WEBSITE/; ls; ng build --output-path ../docs/ --base-href Z-Anatomy --verbose 
 
       - run: ls docs
