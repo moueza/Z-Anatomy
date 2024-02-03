@@ -25,9 +25,9 @@ jobs:
       - run: rm docs/ -Rf
 
       #from https://blog.khophi.co/deploy-angular-with-github-actions/
-      - run: npm install
-      - run: npm install -g @angular/cli > /dev/null
-      - run: ng build --prod
+      - run: cd WEBSITE ; npm install
+      - run: cd WEBSITE ; npm install -g @angular/cli > /dev/null
+      - run: cd WEBSITE ; ng build --prod
 
 
       - run: cd WEBSITE/;sudo npm install; #incremental
