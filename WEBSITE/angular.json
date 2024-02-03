@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Z-Anatomy:build:production"
+              "buildTarget": "Z-Anatomy:build:production"
             },
             "development": {
-              "browserTarget": "Z-Anatomy:build:development"
+              "buildTarget": "Z-Anatomy:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Z-Anatomy:build"
+            "buildTarget": "Z-Anatomy:build"
           }
         },
         "test": {
