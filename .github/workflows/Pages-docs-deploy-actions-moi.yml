@@ -31,7 +31,7 @@ jobs:
 
 
       - run: cd WEBSITE/;sudo npm install; #incremental
-      - run: cd WEBSITE/;sudo npm install; sudo npm install -g  ; ls; sudo ng build
+      - run: cd WEBSITE/;sudo npm install; sudo npm install -g  ; ls; ng build
       - run: cd WEBSITE/;npm install; npm install -g  ; ls; ng build ; cp dist -Rf ../docs #https://stackoverflow.com/questions/46623571/angular-ng-command-not-found
       #- run: cd WEBSITE/; ls; ng build --output-path ../docs/ --base-href Z-Anatomy --verbose 
 
