@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
     title = 'Z-Anatomy';
-    version = 62;//v =
+    version = 63;//v =
     cookiesONvar: boolean=false;
     /**  private https://stackoverflow.com/questions/40371728/firing-an-angular-2-attribute-directive-after-model-load */
     constructor() {
