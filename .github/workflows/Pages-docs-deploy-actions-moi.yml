@@ -7,24 +7,42 @@ on:
   pull_request:
     # Sequence of patterns matched against refs/heads
     branches:    
-      - main
+      - WEBSITE-preprod
+  push:
+    branches:    
+      - WEBSITE-preprod
+
 jobs:
 
   Action-Pages-Me-job:
 
     runs-on: ubuntu-latest
+
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      #https://github.com/marketplace/actions/git-auto-commit
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '18.13'
       - run: npm install -g bats
       - run: bats -v
       - run: ls
       #rm /var/www/html/Z-Anatomy/docs/ -Rf ;cd /var/www/html/Z-Anatomy/WEBSITE/ ;ng build --output-path /var/www/html/Z-Anatomy/docs/ --base-href Z-Anatomy --verbose ; cd /var/www/html/Z-Anatomy/
-      - run: rm docs/ -Rf
+      - run: rm dist/ -Rf ; rm docs/ -Rf ;
 
-      - run: npm install -g @angular/cli@15.2.10 #https://stackoverflow.com/questions/46623571/angular-ng-command-not-found
-      - run: cd WEBSITE/; ls; ng build --output-path ../docs/ --base-href Z-Anatomy --verbose
+      #from https://blog.khophi.co/deploy-angular-with-github-actions/
+      
+      #- run: cd WEBSITE/;npm install; npm install -g  ; ls; ng build --base-href "z-anatomy"; cp dist/z-anatomy -Rf ../docs #https://stackoverflow.com/questions/46623571/angular-ng-command-not-found
+      - run: cd WEBSITE/; cp src/index.html ../docs 
+
+      #- run: cd WEBSITE/; ls; ng build --output-path ../docs/ --base-href Z-Anatomy --verbose 
+
       - run: ls docs
+
+      
+      - uses: stefanzweifel/git-auto-commit-action@v5
 

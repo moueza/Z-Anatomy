@@ -1,1 +1,3 @@
 WEBSITE/.angular/cache
+WEBSITE/node_modules/*
+**~
