@@ -38,11 +38,12 @@ jobs:
       
       #- run: cd WEBSITE/;npm install; npm install -g  ; ls; ng build --base-href "z-anatomy"; cp dist/z-anatomy -Rf ../docs #https://stackoverflow.com/questions/46623571/angular-ng-command-not-found
       - run: cd WEBSITE/; cp src/index.html ../docs 
-
+      - run: echo "test55" > poub6552105.txt
       #- run: cd WEBSITE/; ls; ng build --output-path ../docs/ --base-href Z-Anatomy --verbose 
 
       - run: ls docs
 
       
       - uses: stefanzweifel/git-auto-commit-action@v5
+
 
