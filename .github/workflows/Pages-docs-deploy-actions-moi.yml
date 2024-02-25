@@ -8,6 +8,10 @@ on:
     # Sequence of patterns matched against refs/heads
     branches:    
       - WEBSITE-preprod
+  push:
+    branches:    
+      - WEBSITE-preprod
+
 jobs:
 
   Action-Pages-Me-job:
