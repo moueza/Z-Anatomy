@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-critters-container>
+<html lang="en">
   <head>
     <!-- Google tag (gtag.js) not from Firebase but standalone Google Analytics-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E97TFK1E56"></script>
@@ -22,7 +22,7 @@
     <meta charset="utf-8">
     <title>Z-Anatomy</title>
     <!-- https://github.com/isaacs/github/issues/408 -->
-    <base href="Z-Anatomy">
+    <base href="/">
 
     <meta charset="UTF-8">
     <meta name="description" content="Free anatomy model">
@@ -33,8 +33,9 @@
 
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="styles.ef46db3751d8e999.css"></head>
+  </head>
   <body>
-v = 76 brut
-  <script src="runtime.5acb62b95271b9b9.js" type="module"></script><script src="polyfills.efee671cd4abef70.js" type="module"></script><script src="main.85e9d20e131f085e.js" type="module"></script></body>
+ 
+    <app-root></app-root>
+  </body>
 </html>
