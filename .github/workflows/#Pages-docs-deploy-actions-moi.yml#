@@ -1,0 +1,52 @@
+name: Pages Me
+run-name: ${{ github.actor }} GitHub Actions Pages Me
+
+#on: [push]
+
+on:
+  pull_request:
+    # Sequence of patterns matched against refs/heads
+    branches:    
+      - WEBSITE-preprod
+  push:
+    branches:    
+      - WEBSITE-preprod
+
+jobs:
+
+  Action-Pages-Me-job:
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      #https://github.com/marketplace/actions/git-auto-commit
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18.13'
+      - run: npm install -g bats
+      - run: bats -v
+      - run: ls
+      
+      - run: rm WEBSITE/dist/ -Rf ; rm docs/ -Rf ;
+      #rm /var/www/html/Z-Anatomy/docs/ -Rf ;cd /var/www/html/Z-Anatomy/WEBSITE/ ;ng build --output-path /var/www/html/Z-Anatomy/docs/ --base-href Z-Anatomy --verbose ; cd /var/www/html/Z-Anatomy/
+      #- run: cd WEBSITE/;npm install; npm install -g  ; ls; ng build --base-href "z-anatomy"; cp dist/z-anatomy -Rf ../docs #https://stackoverflow.com/questions/46623571/angular-ng-command-not-found
+      - run: cd WEBSITE; npm install; npm install -g; ng build --output-path docs/ --base-href Z-Anatomy --verbose 
+      #from https://blog.khophi.co/deploy-angular-with-github-actions/
+      
+      
+      #- run: mkdir docs; cd WEBSITE/; cp src/index.html ../docs 
+      #- run: echo "test55" > poub6552105.txt
+      #- run: cd WEBSITE/; ls; ng build --output-path ../docs/ --base-href Z-Anatomy --verbose 
+
+      - run: ls docs
+
+      
+      
+      - uses: stefanzweifel/git-auto-commit-action@v5
+
+
