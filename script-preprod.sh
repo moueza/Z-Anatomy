@@ -2,5 +2,5 @@
  
 cd WEBSITE;ng build;cd ..
 
-rm -rf docs/;  
-cp WEBSITE/dist/* ./docs
+rm -Rf docs/;  
+cp -Rf WEBSITE/dist/* ./docs
