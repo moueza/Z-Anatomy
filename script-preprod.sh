@@ -1,6 +1,6 @@
 #!/bin/bash
  
-cd WEBSITE;ng build;cd ..
+cd WEBSITE;npm install;ng build;cd ..
 
 rm -Rf docs;  
 cp -Rf WEBSITE/dist/z-anatomy ./docs
