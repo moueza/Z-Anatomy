@@ -4,10 +4,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'v13 Building..'
-		cd WEBSITE/
-		npm install
-		ng build
+                echo 'v = 14 Building..'
+		sh 'cd WEBSITE/; ls; npm install;ng build ' 
+		
+		
+		
 		
             }
         }
