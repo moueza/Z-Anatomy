@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'v = 16 Building..'
-		sh 'cd WEBSITE/; ls; /usr/local/bin/npm install ' 
+                echo 'v = 17 Building..'
+		sh 'cd WEBSITE/; ls; sudo /usr/local/bin/npm install ' 
 		
 		
 		
