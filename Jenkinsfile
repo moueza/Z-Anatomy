@@ -8,7 +8,7 @@ pipeline {
 
 
 
-stage('Build') {
+      stage('Build') {
         steps {
            script{
              if(params.SKIP_TESTS){
@@ -20,9 +20,9 @@ stage('Build') {
                sh 'cd WEBSITE/;npm run test'
                sh 'cd WEBSITE/;npm run build:${ENV}'
                     }
-                  }
-               }
              }
+         }
+        }
 
 
 
