@@ -13,10 +13,10 @@ stage('Build') {
            script{
              if(params.SKIP_TESTS){
 	     
-               sh 'cd WEBSITE/;npm install'
+               sh 'cd WEBSITE/;rm -Rf dist; npm install'
                sh 'cd WEBSITE/;npm run build:${ENV}'
              }else{
-               sh 'cd WEBSITE/;npm install'
+               sh 'cd WEBSITE/;rm -Rf dist;npm install'
                sh 'cd WEBSITE/;npm run test'
                sh 'cd WEBSITE/;npm run build:${ENV}'
                     }
