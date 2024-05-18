@@ -2,16 +2,32 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
-            steps {
-                echo 'v = 18 Building..'
-		sh 'cd WEBSITE/; ls; sudo -S /usr/local/bin/npm install ' 
-		
-		
-		
-		
-            }
-        }
+        
+
+
+
+
+
+stage('Build') {
+        steps {
+           script{
+             if(params.SKIP_TESTS){
+	     
+               sh 'cd WEBSITE/;npm install'
+               sh 'cd WEBSITE/;npm run build:${ENV}'
+             }else{
+               sh 'cd WEBSITE/;npm install'
+               sh 'cd WEBSITE/;npm run test'
+               sh 'cd WEBSITE/;npm run build:${ENV}'
+                    }
+                  }
+               }
+             }
+
+
+
+
+
         stage('Test') {
             steps {
                 echo 'Testing..'
