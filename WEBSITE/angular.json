@@ -18,8 +18,8 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": {
-		"base": "../docs",
-		 "browser": ""
+		"base": "../docs"
+		
             },
             "index": "src/index.html",
             "polyfills": [
