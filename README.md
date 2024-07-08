@@ -12,7 +12,7 @@ This work is licensed under a
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
-This app was made by Lluís Vinent Juanico, featuring models from the Z-Anatomy project [CC-BY-SA 4.0].
+This app was continued by Peter MOUEZA, featuring models from the Z-Anatomy project [CC-BY-SA 4.0].
 You can find more information about the license in the LICENSE file.
 
 [![Z-Anatomy video](https://img.youtube.com/vi/h6NNGB-_cSY/0.jpg)](https://www.youtube.com/watch?v=h6NNGB-_cSY)
