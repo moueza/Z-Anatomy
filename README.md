@@ -25,4 +25,5 @@ You can find more information about the license in the LICENSE file.
 #https://stackoverflow.com/questions/16539687/github-readme-reference-issue
 - It is not a fork because, tried but, incompatible with lfs to provide big lfs .blend files see [#5](/../../issues/5)
 
-- Contributors, please, conform to https://www.conventionalcommits.org/en/v1.0.0/ for better automatization
+- Contributors, please, conform to https://www.conventionalcommits.org/en/v1.0.0/ for better automatic contribution
+- 
