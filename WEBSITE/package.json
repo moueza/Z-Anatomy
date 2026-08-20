@@ -11,9 +11,9 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^20.1.4",
-    "@angular/common": "^20.1.4",
-    "@angular/compiler": "^20.1.4",
-    "@angular/core": "^20.1.4",
+    "@angular/common": "^20.3.14",
+    "@angular/compiler": "^20.3.16",
+    "@angular/core": "^20.3.18",
     "@angular/forms": "^20.1.4",
     "@angular/platform-browser": "^20.1.4",
     "@angular/platform-browser-dynamic": "^20.1.4",
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@angular/build": "^20.1.4",
-    "@angular/cli": "~20.1.4",
+    "@angular/cli": "~20.3.24",
     "@angular/compiler-cli": "^20.1.4",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.5.0",
