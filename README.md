@@ -24,7 +24,7 @@ You can find more information about the license in the LICENSE file.
 # Z-Anatomy
 - 1) Just Revival storage to keep files still available from https://github.com/LluisV/Z-Anatomy/ 
 
-- 2) https://www.linkedin.com/feed/update/urn:li:activity:7078354492957548544/ -> RDV in August 2024
+- 2) https://www.linkedin.com/feed/update/urn:li:activity:7078354492957548544/ -> RDV in August 2024 ; DIY
 
  - 3) #https://stackoverflow.com/questions/16539687/github-readme-reference-issue
 - 4) It is not a fork because, tried but, incompatible with lfs to provide big lfs .blend files see [#5](/../../issues/5)
