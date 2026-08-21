@@ -1,5 +1,5 @@
 # Z-Anatomy
-. Le20260821 : low compilation resources is the main issue (see [#195](../../issues/195) Plugins), for me = this repo. The main aim for me, this repo, this project is to SHARE SHARE SHARE (see [#196](../../issues/196)
+. Le20260821 : low compilation resources is the main issue (see [#195](../../issues/195) Plugins), for me = this repo. The main aim for me, this repo, this project is to SHARE SHARE SHARE (see [#196](../../issues/196))
 
 . ( Le20260812 tried to compile with Unity, but my PC from 2012 is too old :-( )
 
