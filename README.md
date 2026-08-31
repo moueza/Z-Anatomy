@@ -63,3 +63,5 @@ Le20250731 :
      
 - 10) Europe ideas https://interoperable-europe.ec.europa.eu/sites/default/files/inline-files/Pistes%20pour%20une%20demande%20de%20financement_Z-Anatomy.txt
 
+
+See also : https://github.com/moueza/ECG 
